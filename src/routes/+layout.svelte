@@ -43,7 +43,7 @@
 		transform-box: fill-box;
 		transform-origin: 50% 50%;
 	}
-	.Double_Down {
+	/* .Double_Down {
 		animation: 0.5s linear 0s 1 normal forwards running Double_Down;
 		transform-box: fill-box;
 		transform-origin: 50% 50%;
@@ -69,7 +69,7 @@
 			transform: translateY(10px);
 			opacity: 0.25;
 		}
-	}
+	} */
 
 	@media (min-width: 480px) {
 		footer {
