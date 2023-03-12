@@ -29,14 +29,13 @@
 		<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
 			<div class="flex justify-between h-16">
 				<div class="flex items-center w-full md:place-content-around">
-					<a href="#"><img src={logo} alt="CyberScript Solutions" /></a>
+					<a href="/"><img src={logo} alt="CyberScript Solutions" /></a>
 					<div class="hidden sm:block">
 						<ul class="ml-10 flex items-baseline space-x-4">
 							<li><a href="#home" class="white hover:no-underline hover:text-gray-700">Home</a></li>
 							<li>
 								<a href="#about" class="white hover:no-underline hover:text-gray-700">About</a>
 							</li>
-							<li><a href="#" class="white hover:no-underline hover:text-gray-700">Contact</a></li>
 						</ul>
 					</div>
 				</div>
