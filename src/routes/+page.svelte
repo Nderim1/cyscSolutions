@@ -1,11 +1,6 @@
 <script>
-	import welcome from '$lib/images/svelte-welcome.webp';
-	import welcome_fallback from '$lib/images/svelte-welcome.png';
-	import pain_points from '$lib/images/pain_points.png';
-	import network_ball from '$lib/images/network_ball.png';
 	import Divider from '../lib/components/divider.svelte';
 	import Step from '../lib/components/step.svelte';
-	import logo_white from '$lib/images/logo_white.svg';
 	import ball from '$lib/images/network_ball.png';
 
 	const stepsData = [
