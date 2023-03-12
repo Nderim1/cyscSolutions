@@ -76,7 +76,11 @@
 	</div>
 	<div class="flex items-center content-center ml-auto mr-auto h-full md:w-11/12 lg:w-5/6 xl:w-2/3">
 		<h2 class="h-[1000px]" id="about">another section</h2>
-		<div class="rotate w-12 h-12" src={logo_white} alt="" />
+		<div>
+			{#each stepsData as step}
+				<Step stepData={step} />
+			{/each}
+		</div>
 	</div>
 </div>
 

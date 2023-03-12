@@ -5,6 +5,7 @@
 
 <!-- -->
 <div class="flex w-full">
+	<!-- <div class="w-48 h-48 bg-[url('')] bg-center bg-cover" /> -->
 	<div class="w-48 h-48 bg-[url('{stepData.img}')] bg-center bg-cover" />
 	<h2>{stepData.title}</h2>
 </div>

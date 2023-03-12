@@ -1,7 +1,6 @@
 <script>
 	import Header from './Header.svelte';
 	import './styles.css';
-	import scroll_down_animation from '$lib/images/scroll_down_animation.svg';
 	import double_down from '$lib/images/double_down.svg';
 	import gif from '$lib/images/Plugin_icon_1.gif';
 
