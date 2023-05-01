@@ -45,7 +45,7 @@
 			</div>
 		</section>
 	</div>
-	<div class="flex w-full justify-center">
+	<section class="flex w-full justify-center pt-16 -mt-16" id="solutions">
 		<div class="tabs">
 			<button
 				class="tab tab-lg tab-bordered {sectionToShow === 'custom' ? 'tab-active' : ''}"
@@ -60,7 +60,7 @@
 				on:click={() => changeSection('mobile')}>Mobile development</button
 			>
 		</div>
-	</div>
+	</section>
 	{#if sectionToShow === 'custom'}
 		<!-- content here -->
 		<Custom />

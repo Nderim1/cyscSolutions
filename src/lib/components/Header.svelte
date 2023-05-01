@@ -34,7 +34,9 @@
 						<ul class="ml-10 flex items-baseline space-x-4">
 							<li><a href="#home" class="white hover:no-underline hover:text-gray-700">Home</a></li>
 							<li>
-								<a href="#home" class="white hover:no-underline hover:text-gray-700">Solutions</a>
+								<a href="#solutions" class="white hover:no-underline hover:text-gray-700"
+									>Solutions</a
+								>
 							</li>
 							<li>
 								<a href="#about" class="white hover:no-underline hover:text-gray-700">About</a>
