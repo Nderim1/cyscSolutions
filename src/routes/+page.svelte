@@ -70,6 +70,9 @@
 		<!-- else content here -->
 		<Mobile />
 	{/if}
+	<section class="flex w-full justify-center" id="about">
+		<span>About</span>
+	</section>
 </div>
 
 <style>
