@@ -49,15 +49,15 @@
 		<div class="tabs">
 			<button
 				class="tab tab-lg tab-bordered {sectionToShow === 'custom' ? 'tab-active' : ''}"
-				on:click={() => changeSection('custom')}>Custom software development</button
+				on:click={() => changeSection('custom')}>Custom</button
 			>
 			<button
 				class="tab tab-lg tab-bordered {sectionToShow === 'web' ? 'tab-active' : ''}"
-				on:click={() => changeSection('web')}>Web development & design</button
+				on:click={() => changeSection('web')}>Web</button
 			>
 			<button
 				class="tab tab-lg tab-bordered {sectionToShow === 'mobile' ? 'tab-active' : ''}"
-				on:click={() => changeSection('mobile')}>Mobile development</button
+				on:click={() => changeSection('mobile')}>Mobile</button
 			>
 		</div>
 	</section>
