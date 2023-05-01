@@ -1,18 +1,17 @@
 <script>
 	import Header from './Header.svelte';
 	import './styles.css';
+	import Footer from './Footer.svelte';
 </script>
 
-<div class="app" id="particles-js">
+<div class="app">
 	<Header />
 
 	<main>
 		<slot />
 	</main>
 
-	<footer>
-		<p>CyberScript Solutions AG</p>
-	</footer>
+	<Footer />
 </div>
 
 <style>

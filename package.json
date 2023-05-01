@@ -28,6 +28,7 @@
   "dependencies": {
     "@fontsource/dosis": "^4.5.11",
     "@fontsource/titillium-web": "^4.5.9",
+    "daisyui": "^2.51.6",
     "lodash-es": "^4.17.21"
   }
 }
