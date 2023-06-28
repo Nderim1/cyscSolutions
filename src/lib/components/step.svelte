@@ -12,7 +12,7 @@
 	<div class="mt-10 sm:mt-0 {`${isEven ? 'sm:ml-16' : 'sm:mr-1ml-16'}`}">
 		<span class="text-sm text-indigo-400">step {index + 1}</span>
 		<h2 class="font-extrabold text-xl">{stepData.title}</h2>
-		<div>{stepData.description}</div>
+		<div class="text-left">{stepData.description}</div>
 	</div>
 </div>
 
