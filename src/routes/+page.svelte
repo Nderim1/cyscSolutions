@@ -5,6 +5,8 @@
 	import Custom from '../lib/components/Custom.svelte';
 	import Web from '../lib/components/Web.svelte';
 	import Mobile from '../lib/components/Mobile.svelte';
+	import Contact from '../lib/components/Contact.svelte';
+	import About from '../lib/components/About.svelte';
 
 	let sectionToShow = 'custom';
 
@@ -22,18 +24,18 @@
 	<div class="bg-[url('$lib/images/dark_mode_bg.svg')] bg-cover bg-center bg-no-repeat h-screen">
 		<section
 			id="home"
-			class="flex flex-col-reverse items-center content-center ml-auto mr-auto h-full justify-evenly md:justify-between md:w-11/12 md:flex-row lg:w-5/6 xl:w-2/3"
+			class="flex flex-col-reverse items-center content-center pt-28 ml-auto mr-auto h-full justify-evenly md:justify-between md:w-11/12 md:flex-row lg:w-5/6 xl:w-2/3 md:pt-0"
 		>
 			<div class="w-96 p-5 sm:p-auto">
 				<h2 class="text-left text-2xl">
-					Transform Your Production Process with <strong class="font-extrabold">
-						CyberScript Solutions</strong
-					>
+					Elevate Your Online Presence: Tailored digital solutions for your business by <br
+					/><strong class="font-extrabold text-indigo-600"> CyberScript Solutions</strong>
 				</h2>
 				<Divider />
 				<p>
-					From automation and monitoring to custom software development, we have the expertise and
-					experience to help you achieve your goals faster and more efficiently.
+					we combine cutting-edge technology with captivating design to create digital experiences
+					that captivate, engage, and drive results. <br /> Our mission is to help businesses thrive
+					in the digital landscape.
 				</p>
 				<Divider />
 				<button class="w-28 bg-indigo-400 rounded-sm text-black p-1 hover:text-white"
@@ -45,33 +47,20 @@
 			</div>
 		</section>
 	</div>
-	<section class="flex w-full justify-center pt-16 -mt-16" id="solutions">
-		<div class="tabs">
-			<button
-				class="tab tab-lg tab-bordered {sectionToShow === 'custom' ? 'tab-active' : ''}"
-				on:click={() => changeSection('custom')}>Custom</button
-			>
-			<button
-				class="tab tab-lg tab-bordered {sectionToShow === 'web' ? 'tab-active' : ''}"
-				on:click={() => changeSection('web')}>Web</button
-			>
-			<button
-				class="tab tab-lg tab-bordered {sectionToShow === 'mobile' ? 'tab-active' : ''}"
-				on:click={() => changeSection('mobile')}>Mobile</button
-			>
-		</div>
-	</section>
-	{#if sectionToShow === 'custom'}
-		<!-- content here -->
+	<section class="flex w-full justify-center pt-24 -mt-16 flex-col" id="solutions">
+		<span class="text-center">Solutions</span>
 		<Custom />
-	{:else if sectionToShow === 'web'}
-		<Web />
-	{:else}
-		<!-- else content here -->
-		<Mobile />
-	{/if}
-	<section class="flex w-full justify-center" id="about">
-		<span>About</span>
+	</section>
+	<section class="flex w-full justify-center pt-32 -mt-16  flex-col gap-10" id="about">
+		<span class="text-center">About</span>
+		<About />
+	</section>
+	<section class="flex w-full justify-center p-10 flex-col items-center pt-32" id="about">
+		<span>Contact us</span>
+		<br />
+		<div>
+			<Contact />
+		</div>
 	</section>
 </div>
 

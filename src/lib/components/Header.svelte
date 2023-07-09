@@ -35,7 +35,7 @@
 							<li><a href="#home" class="white hover:no-underline hover:text-gray-700">Home</a></li>
 							<li>
 								<a href="#solutions" class="white hover:no-underline hover:text-gray-700"
-									>Solutions Eri</a
+									>Solutions</a
 								>
 							</li>
 							<li>
@@ -98,7 +98,7 @@
 		>
 			<div class="px-2 pt-2 pb-3 space-y-1">
 				<a href="#" class="white hover:text-gray-700 block">Home</a>
-				<a href="#" class="white hover:text-gray-700 block">Solutions eri</a>
+				<a href="#" class="white hover:text-gray-700 block">Solutions</a>
 				<a href="#" class="white hover:text-gray-700 block">About</a>
 
 				<a href="#" class="white hover:text-gray-700 block">Contact</a>
