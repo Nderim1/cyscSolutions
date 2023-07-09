@@ -38,8 +38,10 @@
 					in the digital landscape.
 				</p>
 				<Divider />
-				<button class="w-28 bg-indigo-400 rounded-sm text-black p-1 hover:text-white"
-					>Contact us!</button
+				<a
+					href="#contact"
+					class="btn btn-accent w-32 rounded-sm text-black p-1 hover:text-white hover:no-underline"
+					>Contact us!</a
 				>
 			</div>
 			<div class="w-48 h-48 md:w-96 md:h-96">
@@ -55,7 +57,7 @@
 		<span class="text-center">About</span>
 		<About />
 	</section>
-	<section class="flex w-full justify-center p-10 flex-col items-center pt-32" id="about">
+	<section class="flex w-full justify-center p-10 flex-col items-center pt-32" id="contact">
 		<span>Contact us</span>
 		<br />
 		<div>

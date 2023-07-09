@@ -41,6 +41,13 @@
 							<li>
 								<a href="#about" class="white hover:no-underline hover:text-gray-700">About</a>
 							</li>
+							<li>
+								<a
+									href="#contact"
+									class="btn btn-accent btn-sm white hover:no-underline hover:text-gray-700"
+									>Contact</a
+								>
+							</li>
 						</ul>
 					</div>
 				</div>
@@ -97,11 +104,10 @@
 			id="mobile-menu"
 		>
 			<div class="px-2 pt-2 pb-3 space-y-1">
-				<a href="#" class="white hover:text-gray-700 block">Home</a>
-				<a href="#" class="white hover:text-gray-700 block">Solutions</a>
-				<a href="#" class="white hover:text-gray-700 block">About</a>
-
-				<a href="#" class="white hover:text-gray-700 block">Contact</a>
+				<a href="#home" class="white hover:text-gray-700 block">Home</a>
+				<a href="#solutions" class="white hover:text-gray-700 block">Solutions</a>
+				<a href="#about" class="white hover:text-gray-700 block">About</a>
+				<a href="#contact" class="white hover:text-gray-700 block">Contact</a>
 			</div>
 		</div>
 	</nav>
