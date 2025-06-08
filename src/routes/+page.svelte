@@ -17,7 +17,7 @@
 
 <svelte:head>
 	<title>CyberScript</title>
-	<meta name="description" content="Svelte demo app" />
+	<meta name="description" content="Deutsche Webseite" />
 </svelte:head>
 
 <div>
@@ -28,20 +28,20 @@
 		>
 			<div class="w-96 p-5 sm:p-auto">
 				<h2 class="text-left text-2xl">
-					Elevate Your Online Presence: Tailored digital solutions for your business by <br
+					Steigern Sie Ihre Online-Präsenz: Maßgeschneiderte digitale Lösungen für Ihr Unternehmen von <br
 					/><strong class="font-extrabold text-indigo-600"> CyberScript Solutions</strong>
 				</h2>
 				<Divider />
 				<p>
-					we combine cutting-edge technology with captivating design to create digital experiences
-					that captivate, engage, and drive results. <br /> Our mission is to help businesses thrive
-					in the digital landscape.
+					Wir verbinden modernste Technologie mit fesselndem Design, um digitale Erlebnisse zu schaffen,
+					die begeistern, fesseln und Ergebnisse liefern. <br /> Unsere Mission ist es, Unternehmen zu helfen,
+					in der digitalen Welt zu wachsen.
 				</p>
 				<Divider />
 				<a
 					href="#contact"
 					class="btn btn-accent w-32 rounded-sm text-black p-1 hover:text-white hover:no-underline"
-					>Contact us!</a
+					>Kontaktieren Sie uns!</a
 				>
 			</div>
 			<div class="w-48 h-48 md:w-96 md:h-96">
@@ -50,15 +50,15 @@
 		</section>
 	</div>
 	<section class="flex w-full justify-center pt-24 -mt-16 flex-col" id="solutions">
-		<span class="text-center">Solutions</span>
+		<span class="text-center">Lösungen</span>
 		<Custom />
 	</section>
 	<section class="flex w-full justify-center pt-32 -mt-16  flex-col gap-10" id="about">
-		<span class="text-center">About</span>
+		<span class="text-center">Über uns</span>
 		<About />
 	</section>
 	<section class="flex w-full justify-center p-10 flex-col items-center pt-32" id="contact">
-		<span>Contact us</span>
+		<span>Kontakt</span>
 		<br />
 		<div>
 			<Contact />

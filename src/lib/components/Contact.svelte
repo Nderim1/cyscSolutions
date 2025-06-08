@@ -11,7 +11,7 @@
 		event.preventDefault(); // Prevent the form from submitting
 
 		if (!name || !email || !message) {
-			return (feedback = 'Please fill all the fields');
+			return (feedback = 'Bitte füllen Sie alle Felder aus');
 		}
 
 		const body = {
@@ -30,12 +30,12 @@
 			let response = await fetch('https://eov7gxt9ly4ks9m.m.pipedream.net', options);
 			console.log(response);
 			if (response.status === 200) {
-				feedback = 'Email was sent successfully!';
+				feedback = 'E-Mail wurde erfolgreich gesendet!';
 			} else {
 				throw new Error();
 			}
 		} catch (error) {
-			feedback = 'Something went wrong. Please refresh and try again.';
+			feedback = 'Etwas ist schiefgelaufen. Bitte aktualisieren Sie die Seite und versuchen Sie es erneut.';
 		}
 	};
 
@@ -54,14 +54,14 @@
 			required
 			on:change={(e) => (name = e.target.value)}
 			type="text"
-			placeholder="Yours or your business' name"
+			placeholder="Ihr Name oder Firmenname"
 			class="input input-bordered input-primary w-full"
 		/>
 	</div>
 
 	<div class="form-control w-full mb-4">
 		<label class="label" for="email">
-			<span class="label-text">Email:</span>
+			<span class="label-text">E-Mail:</span>
 		</label>
 		<input
 			id="email"
@@ -69,14 +69,14 @@
 			value={email}
 			required
 			on:change={(e) => (email = e.target.value)}
-			placeholder="Yours or your business' email"
+			placeholder="Ihre E-Mail-Adresse"
 			class="input input-bordered input-primary w-full"
 		/>
 	</div>
 
 	<div class="form-control w-full mb-4">
 		<label class="label" for="message">
-			<span class="label-text">How can we help you?</span>
+			<span class="label-text">Wie können wir Ihnen helfen?</span>
 		</label>
 		<textarea
 			id="message"
@@ -84,10 +84,10 @@
 			required
 			on:change={(e) => (message = e.target.value)}
 			class="textarea textarea-primary"
-			placeholder="Hi, I need help with my old and slow website..."
+			placeholder="Hallo, ich brauche Hilfe mit meiner alten und langsamen Website..."
 		/>
 	</div>
 
-	<button type="submit" class="btn btn-primary mt-6" on:click={sendEmail}>Send Email</button>
+	<button type="submit" class="btn btn-primary mt-6" on:click={sendEmail}>Nachricht senden</button>
 	<span id="feedback">{feedback}</span>
 </form>
