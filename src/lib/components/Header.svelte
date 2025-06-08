@@ -32,20 +32,20 @@
 					<a href="/"><img src={logo} alt="CyberScript Solutions" /></a>
 					<div class="hidden sm:block">
 						<ul class="ml-10 flex items-baseline space-x-4">
-							<li><a href="#home" class="white hover:no-underline hover:text-gray-700">Home</a></li>
+							<li><a href="#home" class="white hover:no-underline hover:text-gray-700">Startseite</a></li>
 							<li>
 								<a href="#solutions" class="white hover:no-underline hover:text-gray-700"
-									>Solutions</a
+									>Lösungen</a
 								>
 							</li>
 							<li>
-								<a href="#about" class="white hover:no-underline hover:text-gray-700">About</a>
+								<a href="#about" class="white hover:no-underline hover:text-gray-700">Über uns</a>
 							</li>
 							<li>
 								<a
 									href="#contact"
 									class="btn btn-accent btn-sm white hover:no-underline hover:text-gray-700"
-									>Contact</a
+									>Kontakt</a
 								>
 							</li>
 						</ul>
@@ -104,10 +104,10 @@
 			id="mobile-menu"
 		>
 			<div class="px-2 pt-2 pb-3 space-y-1">
-				<a href="#home" class="white hover:text-gray-700 block">Home</a>
-				<a href="#solutions" class="white hover:text-gray-700 block">Solutions</a>
-				<a href="#about" class="white hover:text-gray-700 block">About</a>
-				<a href="#contact" class="white hover:text-gray-700 block">Contact</a>
+				<a href="#home" class="white hover:text-gray-700 block">Startseite</a>
+				<a href="#solutions" class="white hover:text-gray-700 block">Lösungen</a>
+				<a href="#about" class="white hover:text-gray-700 block">Über uns</a>
+				<a href="#contact" class="white hover:text-gray-700 block">Kontakt</a>
 			</div>
 		</div>
 	</nav>

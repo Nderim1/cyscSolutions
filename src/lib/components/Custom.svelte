@@ -41,27 +41,27 @@
 	const stepsData1 = [
 		{
 			img: step1Img,
-			title: 'Web Design',
+			title: 'Webdesign',
 			description:
-				'With careful attention to detail and a deep understanding of user behavior, we create designs that not only impress but also drive engagement. Let us transform your vision into a stunning design that represents your brand and resonates with your target audience.'
+				'Mit großer Sorgfalt und einem tiefen Verständnis für Nutzerverhalten erstellen wir Designs, die nicht nur beeindrucken, sondern auch die Bindung fördern. Lassen Sie uns Ihre Vision in ein atemberaubendes Design verwandeln, das Ihre Marke repräsentiert und Ihre Zielgruppe anspricht.'
 		},
 		{
 			img: step2Img,
-			title: 'Web Development',
+			title: 'Webentwicklung',
 			description:
-				'At CyberScript Solutions, we specialize in building robust and user-friendly websites that elevate your online presence. From simple brochure websites to complex e-commerce platforms, we tailor our web development solutions to meet your specific needs.'
+				'Bei CyberScript Solutions sind wir spezialisiert auf die Entwicklung robuster und benutzerfreundlicher Websites, die Ihre Online-Präsenz stärken. Von einfachen Unternehmenswebsites bis hin zu komplexen E-Commerce-Plattformen passen wir unsere Webentwicklungslösungen an Ihre spezifischen Anforderungen an.'
 		},
 		{
 			img: step3Img,
-			title: 'Mobile Development',
+			title: 'Mobile Entwicklung',
 			description:
-				'In the mobile-driven world, having a presence on smartphones and tablets is essential. Whether you need a native iOS or Android app or a cross-platform solution, we have the expertise to bring your app concept to life. We focus on delivering seamless user experiences that leverage the full potential of mobile technology.'
+				'In der mobilen Welt ist eine Präsenz auf Smartphones und Tablets unerlässlich. Ob Sie eine native iOS- oder Android-App oder eine plattformübergreifende Lösung benötigen – wir verfügen über das Know-how, um Ihr App-Konzept zum Leben zu erwecken. Unser Fokus liegt darauf, nahtlose Benutzererlebnisse zu schaffen, die das volle Potenzial der Mobiltechnologie nutzen.'
 		},
 		{
 			img: step4Img,
 			title: 'Marketing',
 			description:
-				"In today's competitive digital landscape, effective marketing strategies are vital to stand out from the crowd. We employ a data-driven approach, leveraging SEO, social media marketing, content creation, and paid advertising to maximize your online visibility and drive measurable results. Let us create a tailored marketing strategy that aligns with your goals and helps your business thrive."
+				"In der heutigen wettbewerbsintensiven digitalen Landschaft sind effektive Marketingstrategien entscheidend, um sich von der Masse abzuheben. Wir setzen auf einen datengesteuerten Ansatz und nutzen SEO, Social-Media-Marketing, Content-Erstellung und bezahlte Werbung, um Ihre Online-Sichtbarkeit zu maximieren und messbare Ergebnisse zu erzielen. Lassen Sie uns eine maßgeschneiderte Marketingstrategie entwickeln, die Ihren Zielen entspricht und Ihrem Unternehmen zum Erfolg verhilft."
 		}
 	];
 </script>
