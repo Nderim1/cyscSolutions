@@ -44,7 +44,7 @@
 					>Kontaktieren Sie uns!</a
 				>
 			</div>
-			<div class="w-48 h-48 md:w-96 md:h-96">
+			<div class="w-[35rem] h-[35rem]">
 				<img class="rotate" src={ball} alt="" />
 			</div>
 		</section>
@@ -69,14 +69,17 @@
 <style>
 	@keyframes rotating {
 		from {
+			transform: rotate(0deg);
 			-webkit-transform: rotate(0deg);
 		}
 		to {
+			transform: rotate(360deg);
 			-webkit-transform: rotate(360deg);
 		}
 	}
 
 	.rotate {
+		animation: rotating 25s linear infinite;
 		-webkit-animation: rotating 25s linear infinite;
 	}
 </style>
