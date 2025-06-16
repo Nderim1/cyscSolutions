@@ -1,7 +1,7 @@
 <section class="flex items-left content-left ml-auto mr-auto h-full md:w-11/12 lg:w-5/6 xl:w-2/3 flex-col p-10">
-	<h3 class="sr-only">Über CyScript Solutions</h3>
+	<h3 class="sr-only">Über Topalli CyScript GbR</h3>
 <p>
-		CyScript ist Ihr Partner für individualisierte Webentwicklung und Softwarelösungen, von klassischen Anwendungen bis hin zu innovativen Lösungen mit künstlicher Intelligenz.<br/>
+		Topalli CyScript GbR ist Ihr Partner für individualisierte Webentwicklung und Softwarelösungen, von klassischen Anwendungen bis hin zu innovativen Lösungen mit künstlicher Intelligenz.<br/>
     Mit über 10 Jahren Erfahrung im Web- und Softwareentwicklung bringen wir eine hohe Kundenzufriedenheit und Fachkompetenzen mit.
 </p>
 <p>Wir möchten euch auf ihrem Weg in die Zukunft begleiten. Dabei arbeiten wir für Start-ups Ideen, den Mittelstand, öffentliche Einrichtungen und Unternehmen.
@@ -20,7 +20,7 @@
  Ob individuelle Webplattform, intelligente Softwarelösung oder smarte KI-Anwendung. Wir entwickeln Lösungen, die begeistern und echten Mehrwert schaffen.
 </p>
 <p>
-CyScript – Digital. Innovativ. Zuverlässig.
+Topalli CyScript GbR – Digital. Innovativ. Zuverlässig.
 </p> <br />
 <p
 		>Starten Sie jetzt Ihre digitale Erfolgsgeschichte mit uns!

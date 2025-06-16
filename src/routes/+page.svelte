@@ -16,24 +16,42 @@
 </script>
 
 <svelte:head>
-	<title>CyScript Solutions – Webentwicklung, App Entwicklung & IT Beratung</title>
-	<meta name="description" content="CyScript Solutions bietet professionelle Webentwicklung, App Entwicklung, IT-Beratung und digitale Lösungen für Unternehmen. Wir helfen Ihnen, Ihre Online-Präsenz zu stärken und Ihr Geschäft digital erfolgreich zu machen." />
-	<meta name="keywords" content="CyScript, Webentwicklung, App Entwicklung, IT Beratung, Digitale Lösungen, Webdesign, SEO, Online-Präsenz, Softwareentwicklung, Digitalisierung, Unternehmen, Agentur, responsive Design, Svelte, Deutschland" />
-	<meta name="author" content="CyScript Solutions" />
+	<title>Topalli CyScript GbR – Webentwicklung, App Entwicklung & IT Beratung</title>
+	<meta
+		name="description"
+		content="Topalli CyScript GbR bietet professionelle Webentwicklung, App Entwicklung, IT-Beratung und digitale Lösungen für Unternehmen. Wir helfen Ihnen, Ihre Online-Präsenz zu stärken und Ihr Geschäft digital erfolgreich zu machen."
+	/>
+	<meta
+		name="keywords"
+		content="Topalli CyScript GbR, Webentwicklung, App Entwicklung, IT Beratung, Digitale Lösungen, Webdesign, SEO, Online-Präsenz, Softwareentwicklung, Digitalisierung, Unternehmen, Agentur, responsive Design, Svelte, Deutschland"
+	/>
+	<meta name="author" content="Topalli CyScript GbR" />
 	<link rel="canonical" href="https://www.cyscript.de/" />
 	<!-- Open Graph Meta Tags -->
-	<meta property="og:title" content="CyScript Solutions – Webentwicklung, App Entwicklung & IT Beratung" />
-	<meta property="og:description" content="Professionelle digitale Lösungen, Webentwicklung und Beratung für Unternehmen. Jetzt Online-Präsenz steigern mit CyScript Solutions!" />
+	<meta
+		property="og:title"
+		content="Topalli CyScript GbR – Webentwicklung, App Entwicklung & IT Beratung"
+	/>
+	<meta
+		property="og:description"
+		content="Professionelle digitale Lösungen, Webentwicklung und Beratung für Unternehmen. Jetzt Online-Präsenz steigern mit Topalli CyScript GbR!"
+	/>
 	<meta property="og:type" content="website" />
 	<meta property="og:url" content="https://www.cyscript.de/" />
 	<meta property="og:image" content="https://www.cyscript.de/og-image.jpg" />
-	<meta property="og:site_name" content="CyScript Solutions" />
+	<meta property="og:site_name" content="Topalli CyScript GbR" />
 	<!-- Twitter Card Meta Tags -->
 	<meta name="twitter:card" content="summary_large_image" />
-	<meta name="twitter:title" content="CyScript Solutions – Webentwicklung, App Entwicklung & IT Beratung" />
-	<meta name="twitter:description" content="Digitale Lösungen, Webentwicklung, App Entwicklung & IT Beratung für Unternehmen. Jetzt Kontakt aufnehmen!" />
+	<meta
+		name="twitter:title"
+		content="Topalli CyScript GbR – Webentwicklung, App Entwicklung & IT Beratung"
+	/>
+	<meta
+		name="twitter:description"
+		content="Digitale Lösungen, Webentwicklung, App Entwicklung & IT Beratung für Unternehmen. Jetzt Kontakt aufnehmen!"
+	/>
 	<meta name="twitter:image" content="https://www.cyscript.de/og-image.jpg" />
-	<meta name="twitter:site" content="@cyscript" />
+	<meta name="twitter:site" content="@topalli_cyscript" />
 </svelte:head>
 
 <div>
@@ -44,14 +62,15 @@
 		>
 			<div class="w-96 p-5 sm:p-auto">
 				<h1 class="text-left text-2xl">
-					Steigern Sie Ihre Online-Präsenz: Maßgeschneiderte digitale Lösungen für Ihr Unternehmen von <br />
-					<strong class="font-extrabold text-indigo-600">CyScript Solutions</strong>
+					Steigern Sie Ihre Online-Präsenz: Maßgeschneiderte digitale Lösungen für Ihr Unternehmen
+					von <br />
+					<strong class="font-extrabold text-indigo-600">Topalli CyScript GbR</strong>
 				</h1>
 				<Divider />
 				<p>
-					Wir verbinden modernste Technologie mit fesselndem Design, um digitale Erlebnisse zu schaffen,
-					die begeistern, fesseln und Ergebnisse liefern. <br /> Unsere Mission ist es, Unternehmen zu helfen,
-					in der digitalen Welt zu wachsen.
+					Wir verbinden modernste Technologie mit fesselndem Design, um digitale Erlebnisse zu
+					schaffen, die begeistern, fesseln und Ergebnisse liefern. <br /> Unsere Mission ist es, Unternehmen
+					zu helfen, in der digitalen Welt zu wachsen.
 				</p>
 				<Divider />
 				<a
@@ -61,7 +80,11 @@
 				>
 			</div>
 			<div class="network-ball-container w-[35rem] h-[35rem] flex items-center justify-center">
-				<img class="rotate network-ball-img" src={ball} alt="Netzwerk-Ball – CyScript Solutions, moderne IT und Webentwicklung" />
+				<img
+					class="rotate network-ball-img"
+					src={ball}
+					alt="Netzwerk-Ball – Topalli CyScript GbR, moderne IT und Webentwicklung"
+				/>
 			</div>
 		</section>
 	</div>

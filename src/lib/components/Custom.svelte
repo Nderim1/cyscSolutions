@@ -16,7 +16,7 @@
 			img: step2Img,
 			title: 'Webentwicklung',
 			description:
-				'Bei CyScript Solutions sind wir spezialisiert auf die Entwicklung robuster und benutzerfreundlicher Websites, die Ihre Online-Präsenz stärken. Von einfachen Unternehmenswebsites bis hin zu komplexen E-Commerce-Plattformen passen wir unsere Webentwicklungslösungen an Ihre spezifischen Anforderungen an.'
+				'Bei Topalli CyScript GbR sind wir spezialisiert auf die Entwicklung robuster und benutzerfreundlicher Websites, die Ihre Online-Präsenz stärken. Von einfachen Unternehmenswebsites bis hin zu komplexen E-Commerce-Plattformen passen wir unsere Webentwicklungslösungen an Ihre spezifischen Anforderungen an.'
 		},
 		{
 			img: step3Img,
@@ -26,9 +26,9 @@
 		},
 		{
 			img: step4Img,
-			title: 'Marketing',
+			title: 'Künstliche Intelligenz (KI)',
 			description:
-				"In der heutigen wettbewerbsintensiven digitalen Landschaft sind effektive Marketingstrategien entscheidend, um sich von der Masse abzuheben. Wir setzen auf einen datengesteuerten Ansatz und nutzen SEO, Social-Media-Marketing, Content-Erstellung und bezahlte Werbung, um Ihre Online-Sichtbarkeit zu maximieren und messbare Ergebnisse zu erzielen. Lassen Sie uns eine maßgeschneiderte Marketingstrategie entwickeln, die Ihren Zielen entspricht und Ihrem Unternehmen zum Erfolg verhilft."
+				"Mit unseren KI-Services bringen wir Ihr Unternehmen auf das nächste Level: Wir entwickeln intelligente Automatisierungen und maßgeschneiderte KI-Anwendungen, die Ihre Geschäftsprozesse effizienter gestalten und wertvolle Ressourcen sparen. Ob smarte Chatbots, automatisierte Datenanalysen oder individuelle KI-Lösungen – wir integrieren innovative Technologien, um Ihre Wettbewerbsfähigkeit nachhaltig zu stärken und neue digitale Chancen zu erschließen. Lassen Sie sich von uns zur optimalen KI-Strategie beraten!"
 		}
 	];
 </script>
