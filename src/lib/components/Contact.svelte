@@ -43,7 +43,9 @@
 	// form.addEventListener("submit", sendEmail);
 </script>
 
-<form id="contactForm" class="flex flex-col w-96">
+<section>
+	<h3 class="sr-only">Kontaktformular</h3>
+	<form id="contactForm" class="flex flex-col w-96">
 	<div class="form-control w-full mb-4">
 		<label class="label" for="name">
 			<span class="label-text">Name:</span>
@@ -91,3 +93,4 @@
 	<button type="submit" class="btn btn-primary mt-6" on:click={sendEmail}>Nachricht senden</button>
 	<span id="feedback">{feedback}</span>
 </form>
+</section>

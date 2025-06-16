@@ -1,6 +1,5 @@
-<div
-	class="flex items-left content-left ml-auto mr-auto h-full md:w-11/12 lg:w-5/6 xl:w-2/3 flex-col p-10"
->
+<section class="flex items-left content-left ml-auto mr-auto h-full md:w-11/12 lg:w-5/6 xl:w-2/3 flex-col p-10">
+	<h3 class="sr-only">Über CyScript Solutions</h3>
 <p>
 		CyScript ist Ihr Partner für individualisierte Webentwicklung und Softwarelösungen, von klassischen Anwendungen bis hin zu innovativen Lösungen mit künstlicher Intelligenz.<br/>
     Mit über 10 Jahren Erfahrung im Web- und Softwareentwicklung bringen wir eine hohe Kundenzufriedenheit und Fachkompetenzen mit.
@@ -27,4 +26,4 @@ CyScript – Digital. Innovativ. Zuverlässig.
 		>Starten Sie jetzt Ihre digitale Erfolgsgeschichte mit uns!
 		Kontaktieren Sie uns – gemeinsam entwickeln wir Lösungen, die Ihr Unternehmen online sichtbar und erfolgreich machen.
 </p>
-</div>
+</section>

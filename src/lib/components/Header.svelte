@@ -29,7 +29,10 @@
 		<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
 			<div class="flex justify-between h-16">
 				<div class="flex items-center w-full md:place-content-around">
-					<a href="/"><img src={logo} alt="CyberScript Solutions" /></a>
+					<a href="/" aria-label="CyScript Solutions Startseite">
+	<img src={logo} alt="CyScript Solutions Logo - Webentwicklung und IT-Beratung" />
+	<h1 class="sr-only">CyScript Solutions</h1>
+</a>
 					<div class="hidden sm:block">
 						<ul class="ml-10 flex items-baseline space-x-4">
 							<li><a href="#home" class="white hover:no-underline hover:text-gray-700">Startseite</a></li>
@@ -44,7 +47,7 @@
 							<li>
 								<a
 									href="#contact"
-									class="btn btn-accent btn-sm white hover:no-underline hover:text-gray-700"
+									class="btn btn-accent btn-sm text-black hover:no-underline hover:text-white rounded-sm"
 									>Kontakt</a
 								>
 							</li>

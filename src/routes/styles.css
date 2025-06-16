@@ -101,6 +101,67 @@ button:focus:not(:focus-visible) {
 	}
 }
 
+/* Mobile styles for screens up to 720px */
+@media (max-width: 720px) {
+  :root {
+    --column-width: 95vw;
+    --column-margin-top: 2rem;
+    font-size: 15px;
+  }
+  body {
+    padding: 0 0.5rem;
+    font-size: 1rem;
+    background-size: auto 100vh;
+  }
+  .text-column {
+    max-width: 100vw;
+    margin: 0 0.2rem;
+    padding: 0 0.2rem;
+    flex: 1 1 100%;
+  }
+  h1 {
+    font-size: 1.7rem;
+    text-align: left;
+  }
+  h2 {
+    font-size: 1.1rem;
+    text-align: left;
+  }
+  p, a, button, input {
+    font-size: 1rem;
+  }
+  pre {
+    font-size: 0.95rem;
+    padding: 0.3em;
+    word-break: break-all;
+  }
+  nav, header, footer {
+    padding: 0.3rem 0.1rem;
+    font-size: 0.95rem;
+  }
+  img, video {
+    max-width: 100%;
+    height: auto;
+  }
+  /* Add more selectors as needed for your layout */
+
+  .network-ball-container {
+    width: 16rem !important;
+    height: 16rem !important;
+    margin: 0 auto !important;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .network-ball-img {
+    width: 12rem !important;
+    height: 12rem !important;
+    display: block;
+    margin: 0 auto;
+  }
+}
+
+
 .visually-hidden {
 	border: 0;
 	clip: rect(0 0 0 0);
