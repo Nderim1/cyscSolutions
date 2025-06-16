@@ -93,4 +93,5 @@
 	<button type="submit" class="btn btn-primary mt-6" on:click={sendEmail}>Nachricht senden</button>
 	<span id="feedback">{feedback}</span>
 </form>
+<p class="mt-4 text-center">Oder schreiben Sie uns direkt an <a href="mailto:info@cyscript.de" class="underline text-primary hover:text-accent">info@cyscript.de</a></p>
 </section>

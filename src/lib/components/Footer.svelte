@@ -17,5 +17,6 @@
 		</svg>
 		<span class="sr-only">Topalli CyScript GbR</span>
 		<p>Copyright {new Date().getFullYear()} - All right reserved by Topalli CyScript GbR</p>
+<p><a href="mailto:info@cyscript.de" class="underline hover:text-accent">info@cyscript.de</a></p>
 	</div>
 </footer>
