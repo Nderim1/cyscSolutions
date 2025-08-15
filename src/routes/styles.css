@@ -161,7 +161,6 @@ button:focus:not(:focus-visible) {
   }
 }
 
-
 .visually-hidden {
 	border: 0;
 	clip: rect(0 0 0 0);
@@ -172,4 +171,47 @@ button:focus:not(:focus-visible) {
 	position: absolute;
 	width: 1px;
 	white-space: nowrap;
+}
+
+/* --- Modern dark theme refinements and micro-interactions --- */
+:focus-visible {
+  outline: 2px solid #22d3ee; /* accent */
+  outline-offset: 2px;
+}
+
+/* Smooth color transitions on interactive elements */
+a,
+button,
+.btn,
+.card,
+.badge {
+  transition: color 200ms ease, background-color 200ms ease, border-color 200ms ease, box-shadow 200ms ease, transform 200ms ease;
+}
+
+/* Subtle lift on hover for cards */
+.card-hover:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 24px rgba(0,0,0,0.25);
+}
+
+/* Section reveal animation */
+.reveal {
+  opacity: 0;
+  transform: translateY(8px);
+  animation: fadeInUp 600ms ease forwards;
+}
+
+@keyframes fadeInUp {
+  from { opacity: 0; transform: translateY(8px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .reveal,
+  .card-hover:hover,
+  a,
+  button,
+  .btn,
+  .badge,
+  .card { transition: none !important; animation: none !important; }
 }

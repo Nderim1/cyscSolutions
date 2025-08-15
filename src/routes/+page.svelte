@@ -1,12 +1,10 @@
 <script>
-	import Divider from '../lib/components/divider.svelte';
 	import ball from '$lib/images/network_ball.png';
 
 	import Custom from '../lib/components/Custom.svelte';
-	import Web from '../lib/components/Web.svelte';
-	import Mobile from '../lib/components/Mobile.svelte';
 	import Contact from '../lib/components/Contact.svelte';
 	import About from '../lib/components/About.svelte';
+	import Portfolio from '../lib/components/Portfolio.svelte';
 
 	let sectionToShow = 'custom';
 
@@ -23,7 +21,7 @@
 	/>
 	<meta
 		name="keywords"
-		content="Topalli CyScript GbR, Webentwicklung, App Entwicklung, IT Beratung, Digitale Lösungen, Webdesign, SEO, Online-Präsenz, Softwareentwicklung, Digitalisierung, Unternehmen, Agentur, responsive Design, Svelte, Deutschland"
+		content="Topalli CyScript GbR, Individuelle Webanwendungen, KI Anwendungen, Automatisierung, Workflows, Integrationen, API, Backend, SEO, Online-Präsenz, Softwareentwicklung, Digitalisierung, Unternehmen, Agentur, Svelte, Deutschland"
 	/>
 	<meta name="author" content="Topalli CyScript GbR" />
 	<link rel="canonical" href="https://www.cyscript.de/" />
@@ -60,43 +58,130 @@
 			id="home"
 			class="flex flex-col-reverse items-center content-center pt-28 ml-auto mr-auto h-full justify-evenly md:justify-between md:w-11/12 md:flex-row lg:w-5/6 xl:w-2/3 md:pt-0"
 		>
-			<div class="w-96 p-5 sm:p-auto">
-				<h1 class="text-left text-2xl">
-					Steigern Sie Ihre Online-Präsenz: Maßgeschneiderte digitale Lösungen für Ihr Unternehmen
-					von <br />
-					<strong class="font-extrabold text-indigo-600">Topalli CyScript GbR</strong>
-				</h1>
-				<Divider />
-				<p>
-					Wir verbinden modernste Technologie mit fesselndem Design, um digitale Erlebnisse zu
-					schaffen, die begeistern, fesseln und Ergebnisse liefern. <br /> Unsere Mission ist es, Unternehmen
-					zu helfen, in der digitalen Welt zu wachsen.
-				</p>
-				<Divider />
-				<a
-					href="#contact"
-					class="btn btn-accent w-32 rounded-sm text-black p-1 hover:text-white hover:no-underline"
-					>Kontaktieren Sie uns!</a
+			<div class="max-w-2xl p-5 sm:p-0">
+				<div
+					class="inline-flex items-center gap-2 rounded-full border border-base-300/50 bg-base-100/40 px-3 py-1 text-xs text-slate-300"
 				>
+					<span class="inline-block w-2 h-2 rounded-full bg-cyan-400" aria-hidden="true" />
+					Webanwendungen
+					<span class="inline-block w-2 h-2 rounded-full bg-cyan-600" aria-hidden="true" />
+					Workflows
+					<span class="inline-block w-2 h-2 rounded-full bg-cyan-800" aria-hidden="true" /> KI
+				</div>
+				<h1 class="mt-4 text-left text-4xl md:text-6xl font-extrabold leading-tight">
+					<span
+						class="bg-gradient-to-r from-cyan-300 via-teal-300 to-cyan-200 bg-clip-text text-transparent"
+					>
+						Wir Entwickeln individuelle Webanwendungen & KI‑Workflows
+					</span>
+					<br />
+					<span class="text-slate-200">die echte Geschäftsprobleme lösen</span>
+				</h1>
+				<p class="mt-5 text-slate-300 max-w-xl">
+					Wir entwickeln maßgeschneiderte Webanwendungen, Integrationen und KI‑Workflows, die
+					Prozesse automatisieren, Entscheidungen beschleunigen und messbare Ergebnisse liefern.
+				</p>
+				<div class="mt-8 flex flex-wrap gap-3">
+					<a
+						href="#contact"
+						class="btn btn-primary btn-lg rounded-sm text-base-100 hover:no-underline"
+						>Projekt starten</a
+					>
+					<!-- <a
+						href="#portfolio"
+						class="btn btn-ghost rounded-sm text-cyan-300 hover:text-cyan-200 hover:no-underline"
+						>Portfolio ansehen</a
+					> -->
+				</div>
+				<ul class="mt-6 flex flex-wrap gap-4 text-sm text-slate-400">
+					<li class="inline-flex items-center gap-2">
+						<svg
+							width="18"
+							height="18"
+							viewBox="0 0 24 24"
+							fill="none"
+							xmlns="http://www.w3.org/2000/svg"
+							aria-hidden="true"
+							><path
+								d="M5 13l4 4L19 7"
+								stroke="currentColor"
+								stroke-width="2"
+								stroke-linecap="round"
+								stroke-linejoin="round"
+							/></svg
+						>
+						Neuesten KI-Technologien
+					</li>
+					<li class="inline-flex items-center gap-2">
+						<svg
+							width="18"
+							height="18"
+							viewBox="0 0 24 24"
+							fill="none"
+							xmlns="http://www.w3.org/2000/svg"
+							aria-hidden="true"
+							><path
+								d="M5 13l4 4L19 7"
+								stroke="currentColor"
+								stroke-width="2"
+								stroke-linecap="round"
+								stroke-linejoin="round"
+							/></svg
+						>
+						Experten auf dem Gebiet
+					</li>
+					<li class="inline-flex items-center gap-2">
+						<svg
+							width="18"
+							height="18"
+							viewBox="0 0 24 24"
+							fill="none"
+							xmlns="http://www.w3.org/2000/svg"
+							aria-hidden="true"
+							><path
+								d="M5 13l4 4L19 7"
+								stroke="currentColor"
+								stroke-width="2"
+								stroke-linecap="round"
+								stroke-linejoin="round"
+							/></svg
+						>
+						Responsiv & schnell
+					</li>
+				</ul>
 			</div>
-			<div class="network-ball-container w-[35rem] h-[35rem] flex items-center justify-center">
-				<img
-					class="rotate network-ball-img"
-					src={ball}
-					alt="Netzwerk-Ball – Topalli CyScript GbR, moderne IT und Webentwicklung"
+			<div
+				class="relative w-[22rem] h-[22rem] md:w-[28rem] md:h-[28rem] lg:w-[35rem] lg:h-[35rem] flex items-center justify-center z-1"
+			>
+				<div
+					class="absolute -inset-6 rounded-full bg-gradient-to-tr from-cyan-500/20 via-teal-400/10 to-transparent blur-2xl z-1"
 				/>
+				<div
+					class="relative rounded-full ring-1 ring-cyan-400/20 bg-base-200/10 backdrop-blur-sm p-8 z-1"
+				>
+					<img
+						class="rotate network-ball-img w-[18rem] md:w-[24rem] lg:w-[30rem] h-auto"
+						src={ball}
+						alt="Netzwerk-Ball – Topalli CyScript GbR, moderne IT und Webentwicklung"
+					/>
+				</div>
 			</div>
 		</section>
 	</div>
-	<section class="flex w-full justify-center pt-24 -mt-16 flex-col" id="solutions">
+	<section class="flex w-full justify-center pt-24 -mt-16 flex-col reveal" id="solutions">
 		<h2 class="text-center text-2xl font-bold mb-4">Lösungen</h2>
 		<Custom />
 	</section>
-	<section class="flex w-full justify-center pt-32 -mt-16  flex-col gap-10" id="about">
+
+	<section class="flex w-full justify-center pt-32 -mt-16 flex-col gap-10 reveal" id="portfolio">
+		<h2 class="text-center text-2xl font-bold mb-4">Portfolio</h2>
+		<Portfolio />
+	</section>
+	<section class="flex w-full justify-center pt-32 -mt-16  flex-col gap-10 reveal" id="about">
 		<h2 class="text-center text-2xl font-bold mb-4">Über uns</h2>
 		<About />
 	</section>
-	<section class="flex w-full justify-center p-10 flex-col items-center pt-32" id="contact">
+	<section class="flex w-full justify-center p-10 flex-col items-center pt-32 reveal" id="contact">
 		<h2 class="text-center text-2xl font-bold mb-4">Kontakt</h2>
 		<div>
 			<Contact />

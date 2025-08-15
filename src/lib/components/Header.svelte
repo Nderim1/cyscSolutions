@@ -25,7 +25,9 @@
 		isOpen ? 'h-44' : 'h-16'
 	}`}
 >
-	<nav class={` shadow sticky top-0 bg-transparent backdrop-blur-md z-10`}>
+	<nav
+		class={`shadow sticky top-0 bg-base-200/60 border-b border-base-300/40 backdrop-blur-md z-10`}
+	>
 		<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
 			<div class="flex justify-between h-16">
 				<div class="flex items-center w-full md:place-content-around">
@@ -34,22 +36,23 @@
 						<h1 class="sr-only">Topalli CyScript GbR</h1>
 					</a>
 					<div class="hidden sm:block">
-						<ul class="ml-10 flex items-baseline space-x-4">
+						<ul class="ml-10 flex items-baseline space-x-4 text-slate-200">
 							<li>
-								<a href="#home" class="white hover:no-underline hover:text-gray-700">Startseite</a>
+								<a href="#home" class="hover:no-underline hover:text-cyan-300">Startseite</a>
 							</li>
 							<li>
-								<a href="#solutions" class="white hover:no-underline hover:text-gray-700"
-									>Lösungen</a
-								>
+								<a href="#solutions" class="hover:no-underline hover:text-cyan-300">Lösungen</a>
 							</li>
 							<li>
-								<a href="#about" class="white hover:no-underline hover:text-gray-700">Über uns</a>
+								<a href="#portfolio" class="hover:no-underline hover:text-cyan-300">Portfolio</a>
+							</li>
+							<li>
+								<a href="#about" class="hover:no-underline hover:text-cyan-300">Über uns</a>
 							</li>
 							<li>
 								<a
 									href="#contact"
-									class="btn btn-accent btn-sm text-black hover:no-underline hover:text-white rounded-sm"
+									class="btn btn-primary btn-sm text-base-100 hover:no-underline rounded-sm"
 									>Kontakt</a
 								>
 							</li>
@@ -59,7 +62,7 @@
 				<div class="-mr-2 flex sm:hidden">
 					<button
 						type="button"
-						class="inline-flex items-center justify-center p-2 rounded-md white"
+						class="inline-flex items-center justify-center p-2 rounded-md text-slate-200"
 						aria-controls="mobile-menu"
 						aria-expanded={isOpen}
 						on:click={toggleNav}
@@ -105,14 +108,17 @@
 		</div>
 
 		<div
-			class={`sm:hidden absolute top-16 inset-x-0 bg-transparent   ${isOpen ? 'block' : 'hidden'}`}
+			class={`sm:hidden absolute top-16 inset-x-0 bg-base-100/80 border-b border-base-300/40 backdrop-blur ${
+				isOpen ? 'block' : 'hidden'
+			}`}
 			id="mobile-menu"
 		>
 			<div class="px-2 pt-2 pb-3 space-y-1">
-				<a href="#home" class="white hover:text-gray-700 block">Startseite</a>
-				<a href="#solutions" class="white hover:text-gray-700 block">Lösungen</a>
-				<a href="#about" class="white hover:text-gray-700 block">Über uns</a>
-				<a href="#contact" class="white hover:text-gray-700 block">Kontakt</a>
+				<a href="#home" class="block hover:text-cyan-300">Startseite</a>
+				<a href="#solutions" class="block hover:text-cyan-300">Lösungen</a>
+				<a href="#portfolio" class="block hover:text-cyan-300">Portfolio</a>
+				<a href="#about" class="block hover:text-cyan-300">Über uns</a>
+				<a href="#contact" class="block hover:text-cyan-300">Kontakt</a>
 			</div>
 		</div>
 	</nav>
