@@ -1,22 +1,56 @@
 <script>
 	import logo from '$lib/images/icon_white_v3.svg';
-	import { onMount } from 'svelte';
+	import { onMount, onDestroy } from 'svelte';
 	import { debounce } from 'lodash-es';
 
 	let isOpen = false;
 	let isMobile = false;
+	let isSolutionsOpen = false;
+
+	const navItems = [
+		{ href: '#home', text: 'Startseite' },
+		{
+			text: 'Lösungen',
+			children: [
+				{ href: '/legal', text: 'für ⚖️ Juristische Praxen' },
+				{ href: '/finance', text: 'für 💰 Finanz- & Versicherungswesen' },
+				{ href: '/real-estate', text: 'für 🏢 Immobilienagenturen' },
+				{ href: '/manufacturing', text: 'für 🏭 Produktion & Fertigung' }
+			]
+		},
+		{ href: '#portfolio', text: 'Portfolio' },
+		{ href: '#about', text: 'Über uns' },
+		{ href: '#contact', text: 'Kontakt', isButton: true }
+	];
 
 	const toggleNav = () => {
 		isOpen = !isOpen;
 	};
 
-	const handleResize = debounce(() => {
-		isMobile = window.innerWidth < 468;
-	}, 200);
+	const toggleSolutions = () => {
+		console.log('toggleSolutions', isSolutionsOpen);
+		isSolutionsOpen = !isSolutionsOpen;
+	};
+
+	const handleClickOutside = (event) => {
+		if (isSolutionsOpen && event.target.id !== 'solutions') {
+			isSolutionsOpen = false;
+		}
+	};
 
 	onMount(() => {
+		const handleResize = debounce(() => {
+			isMobile = window.innerWidth < 468;
+		}, 200);
+
 		isMobile = window.innerWidth < 468;
 		window.addEventListener('resize', handleResize);
+		window.addEventListener('click', handleClickOutside);
+
+		return () => {
+			window.removeEventListener('resize', handleResize);
+			window.removeEventListener('click', handleClickOutside);
+		};
 	});
 </script>
 
@@ -37,25 +71,57 @@
 					</a>
 					<div class="hidden sm:block">
 						<ul class="ml-10 flex items-baseline space-x-4 text-slate-200">
-							<li>
-								<a href="#home" class="hover:no-underline hover:text-cyan-300">Startseite</a>
-							</li>
-							<li>
-								<a href="#solutions" class="hover:no-underline hover:text-cyan-300">Lösungen</a>
-							</li>
-							<li>
-								<a href="#portfolio" class="hover:no-underline hover:text-cyan-300">Portfolio</a>
-							</li>
-							<li>
-								<a href="#about" class="hover:no-underline hover:text-cyan-300">Über uns</a>
-							</li>
-							<li>
-								<a
-									href="#contact"
-									class="btn btn-primary btn-sm text-base-100 hover:no-underline rounded-sm"
-									>Kontakt</a
-								>
-							</li>
+							{#each navItems as item}
+								<li class="relative">
+									{#if item.children}
+										<button
+											id="solutions"
+											on:click={toggleSolutions}
+											class="hover:no-underline hover:text-cyan-300 flex items-center"
+										>
+											{item.text}
+											<svg
+												class="w-4 h-4 ml-1"
+												fill="none"
+												stroke="currentColor"
+												viewBox="0 0 24 24"
+												xmlns="http://www.w3.org/2000/svg"
+												><path
+													stroke-linecap="round"
+													stroke-linejoin="round"
+													stroke-width="2"
+													d="M19 9l-7 7-7-7"
+												/></svg
+											>
+										</button>
+										{#if isSolutionsOpen}
+											<ul
+												class="absolute left-0 mt-2 w-96 bg-base-200/80 backdrop-blur rounded-md shadow-lg z-20"
+											>
+												{#each item.children as child}
+													<li>
+														<a
+															href={child.href}
+															class="block px-4 py-2 text-slate-200 hover:bg-base-300/60 hover:no-underline"
+															>{child.text}</a
+														>
+													</li>
+												{/each}
+											</ul>
+										{/if}
+									{:else if item.isButton}
+										<a
+											href={item.href}
+											class="btn btn-primary btn-sm text-base-100 hover:no-underline rounded-sm"
+											>{item.text}</a
+										>
+									{:else}
+										<a href={item.href} class="hover:no-underline hover:text-cyan-300"
+											>{item.text}</a
+										>
+									{/if}
+								</li>
+							{/each}
 						</ul>
 					</div>
 				</div>
@@ -114,89 +180,46 @@
 			id="mobile-menu"
 		>
 			<div class="px-2 pt-2 pb-3 space-y-1">
-				<a href="#home" class="block hover:text-cyan-300">Startseite</a>
-				<a href="#solutions" class="block hover:text-cyan-300">Lösungen</a>
-				<a href="#portfolio" class="block hover:text-cyan-300">Portfolio</a>
-				<a href="#about" class="block hover:text-cyan-300">Über uns</a>
-				<a href="#contact" class="block hover:text-cyan-300">Kontakt</a>
+				{#each navItems as item}
+					{#if item.children}
+						<div class="relative">
+							<button
+								id="solutions"
+								on:click={toggleSolutions}
+								class="w-full text-left hover:text-cyan-300 flex items-center"
+							>
+								{item.text}
+								<svg
+									class="w-4 h-4 ml-1"
+									fill="none"
+									stroke="currentColor"
+									viewBox="0 0 24 24"
+									xmlns="http://www.w3.org/2000/svg"
+									><path
+										stroke-linecap="round"
+										stroke-linejoin="round"
+										stroke-width="2"
+										d="M19 9l-7 7-7-7"
+									/></svg
+								>
+							</button>
+							{#if isSolutionsOpen}
+								<div class="pl-4" id="solutions-menu">
+									{#each item.children as child}
+										<a href={child.href} class="block hover:text-cyan-300">{child.text}</a>
+									{/each}
+								</div>
+							{/if}
+						</div>
+					{:else}
+						<a href={item.href} class="block hover:text-cyan-300">{item.text}</a>
+					{/if}
+				{/each}
 			</div>
 		</div>
 	</nav>
 </div>
 
 <style>
-	/* header {
-		z-index: 99;
-		position: sticky;
-		top: 0;
-		padding: 12px;
-		justify-content: space-between;
-	}
-	.header_container {
-		width: 60%;
-		display: flex;
-		margin-left: auto;
-		margin-right: auto;
-		justify-content: space-between;
-	}
-
-	.corner {
-		width: 5em;
-	}
-
-	.corner a {
-		display: flex;
-		align-items: center;
-		justify-content: center;
-		width: 100%;
-		height: 100%;
-	} */
-
-	/* .corner img {
-		width: 6em;
-		height: 2em;
-		object-fit: contain;
-	} */
-
-	/* nav {
-		display: flex;
-		justify-content: center;
-		--background: rgba(255, 255, 255, 0.7);
-	} */
-
-	/* ul {
-		position: relative;
-		padding: 0;
-		margin: 0;
-		height: 3em;
-		display: flex;
-		justify-content: center;
-		align-items: center;
-		list-style: none;
-		background: var(--background);
-		background-size: contain;
-	}
-
-	li {
-		position: relative;
-		height: 100%;
-	}
-
-	nav a {
-		display: flex;
-		height: 100%;
-		align-items: center;
-		padding: 0 0.5rem;
-		color: var(--color-text);
-		font-weight: 700;
-		font-size: 0.8rem;
-		text-transform: uppercase;
-		letter-spacing: 0.1em;
-		text-decoration: none;
-		transition: color 0.2s linear;
-	}
-
-	a:hover {
-		color: var(--color-theme-1);
-	} */
+	/* No custom styles needed for now */
 </style>
