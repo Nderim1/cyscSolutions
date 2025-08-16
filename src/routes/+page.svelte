@@ -74,7 +74,7 @@
 					<span
 						class="bg-gradient-to-r from-cyan-300 via-teal-300 to-cyan-200 bg-clip-text text-transparent md:text-[clamp(3rem,_2.5vh,_1.25rem)]"
 					>
-						Wir Entwickeln individuelle Webanwendungen & KI‑Workflows
+						Individuelle Webanwendungen & KI‑Workflows,
 					</span>
 					<br />
 					<span class="text-slate-200  md:text-[clamp(2.5rem,_2.5vh,_1.125rem)]"
@@ -84,7 +84,7 @@
 				<p
 					class="mt-5 text-slate-300 max-w-xl text-[clamp(0.875rem,_2.5vh,_1.125rem)] md:text-lg leading-relaxed"
 				>
-					Wir entwickeln maßgeschneiderte Webanwendungen, Integrationen und KI‑Workflows, die
+					Entwicklung von maßgeschneiderten Webanwendungen, Integrationen und KI-Workflows, die
 					Prozesse automatisieren, Entscheidungen beschleunigen und messbare Ergebnisse liefern.
 				</p>
 				<div class="mt-8 flex flex-wrap gap-3">
@@ -184,7 +184,7 @@
 		<Portfolio />
 	</section>
 	<section class="flex w-full justify-center pt-32 -mt-16  flex-col gap-10 reveal" id="about">
-		<h2 class="text-center text-2xl font-bold mb-4">Über uns</h2>
+		<h2 class="text-center text-2xl font-bold mb-4">Agentur</h2>
 		<About />
 	</section>
 	<section class="flex w-full justify-center p-10 flex-col items-center pt-32 reveal" id="contact">
