@@ -8,7 +8,7 @@
 	let isSolutionsOpen = false;
 
 	const navItems = [
-		{ href: '#home', text: 'Startseite' },
+		{ href: '/', text: 'Startseite' },
 		{
 			text: 'Lösungen',
 			children: [
@@ -18,9 +18,9 @@
 				{ href: '/manufacturing', text: 'für 🏭 Produktion & Fertigung' }
 			]
 		},
-		{ href: '#portfolio', text: 'Portfolio' },
-		{ href: '#about', text: 'Über uns' },
-		{ href: '#contact', text: 'Kontakt', isButton: true }
+		{ href: '/#portfolio', text: 'Portfolio' },
+		{ href: '/#about', text: 'Über uns' },
+		{ href: '/#contact', text: 'Kontakt', isButton: true }
 	];
 
 	const toggleNav = () => {
@@ -204,7 +204,7 @@
 								>
 							</button>
 							{#if isSolutionsOpen}
-								<div class="pl-4" id="solutions-menu">
+								<div class="pl-4">
 									{#each item.children as child}
 										<a href={child.href} class="block hover:text-cyan-300">{child.text}</a>
 									{/each}
