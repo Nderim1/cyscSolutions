@@ -96,7 +96,7 @@
 										</button>
 										{#if isSolutionsOpen}
 											<ul
-												class="absolute left-0 mt-2 w-96 bg-base-200/80 backdrop-blur rounded-md shadow-lg z-20"
+												class="absolute left-0 mt-2 w-[21rem] bg-base-200 backdrop-blur rounded-md shadow-lg z-20"
 											>
 												{#each item.children as child}
 													<li>
