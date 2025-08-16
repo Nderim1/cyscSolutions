@@ -54,14 +54,14 @@
 	});
 </script>
 
-<div
-	class={`navbar-wrapper fixed top-0 left-0 w-full backdrop-blur-md z-10 ${
-		isOpen ? 'h-44' : 'h-16'
-	}`}
->
-	<nav
-		class={`shadow sticky top-0 bg-base-200/60 border-b border-base-300/40 backdrop-blur-md z-10`}
-	>
+<header class={`fixed top-0 left-0 w-full z-10 ${isOpen ? 'h-44' : 'h-16'}`}>
+	<!-- This div is ONLY for the background blur of the nav bar -->
+	<div
+		class="absolute inset-x-0 top-0 h-16 bg-base-200/60 border-b border-base-300/40 backdrop-blur-md"
+	/>
+
+	<!-- The nav content sits on top with a transparent background -->
+	<nav class="relative z-20">
 		<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
 			<div class="flex justify-between h-16">
 				<div class="flex items-center w-full md:place-content-around">
@@ -96,7 +96,7 @@
 										</button>
 										{#if isSolutionsOpen}
 											<ul
-												class="absolute left-0 mt-2 w-[21rem] bg-base-200/90 backdrop-blur rounded-md shadow-lg z-20"
+												class="absolute left-0 mt-[1.15rem] w-[21rem] bg-base-200/60  backdrop-blur-md rounded-sm shadow-lg z-20"
 											>
 												{#each item.children as child}
 													<li>
@@ -218,7 +218,7 @@
 			</div>
 		</div>
 	</nav>
-</div>
+</header>
 
 <style>
 	/* No custom styles needed for now */
