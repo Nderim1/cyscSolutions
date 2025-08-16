@@ -72,14 +72,18 @@
 				</div>
 				<h1 class="mt-4 text-left text-4xl md:text-6xl font-extrabold leading-tight">
 					<span
-						class="bg-gradient-to-r from-cyan-300 via-teal-300 to-cyan-200 bg-clip-text text-transparent"
+						class="bg-gradient-to-r from-cyan-300 via-teal-300 to-cyan-200 bg-clip-text text-transparent md:text-[clamp(3rem,_2.5vh,_1.25rem)]"
 					>
 						Wir Entwickeln individuelle Webanwendungen & KI‑Workflows
 					</span>
 					<br />
-					<span class="text-slate-200">die echte Geschäftsprobleme lösen</span>
+					<span class="text-slate-200  md:text-[clamp(2.5rem,_2.5vh,_1.125rem)]"
+						>die echte Geschäftsprobleme lösen</span
+					>
 				</h1>
-				<p class="mt-5 text-slate-300 max-w-xl">
+				<p
+					class="mt-5 text-slate-300 max-w-xl text-[clamp(0.875rem,_2.5vh,_1.125rem)] md:text-lg leading-relaxed"
+				>
 					Wir entwickeln maßgeschneiderte Webanwendungen, Integrationen und KI‑Workflows, die
 					Prozesse automatisieren, Entscheidungen beschleunigen und messbare Ergebnisse liefern.
 				</p>
